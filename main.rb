@@ -17,7 +17,7 @@ def dirlist()
         a {
             color: white;        
             font-size: 14pt;
-        }
+		}
         a:link {
             color: white;
             text-decoration: none;
