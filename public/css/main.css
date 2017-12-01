@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'IBMVGA8';
+    src: url(../fonts/ibm_vga8.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0.50em;
+    padding: 0.30em;
+    background-color: #333;
+    text-align: center;
+    /*border: 2px solid #eee;*/
+}
+.text{
+    font-family: IBMVGA8, monospace;
+    color: #eee;
+}
+.text.p{
+    font-size: 16pt;
+}
+.text.p.center{
+    text-align: center;
+}
+.text.title.center{
+    text-align: center;
+}
+#main{
+    /*border: 2px solid #eee;*/
+    width: 60vw;
+}
+@media only screen and (max-device-width : 1280px){  /*Tablet Media*/
+    #main{
+        width: 75vw;
+    }
+    .text.p{
+        font-size: 14pt;
+    }
+}
+@media only screen and (max-device-width : 1024px){ /*Phone landspace Media*/
+    #main{
+        width: 85vw;
+    }
+    .text.p{
+        font-size: 12pt;
+    }
+}
+@media only screen and (max-device-width : 768px){ /*Phone*/
+    #main{
+        width: 100%;
+    }
+    .text.p{
+        font-size: 10pt;
+    }
+}
